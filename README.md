@@ -12,6 +12,7 @@ Features
 
 - Convert an amount from one currency to another
 - View all exchange rates for a given base currency
+- Currency dropdowns in /docs are pulled live from the exchange rate API, so all supported currencies show up automatically
 - Rates are cached for 1 hour to avoid hitting the exchange rate API too often
 
 Project Structure
