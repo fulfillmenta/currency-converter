@@ -15,7 +15,7 @@ def rates(base: str):
     all_rates = get_exchange_rate(base)
     if all_rates is None:
         raise HTTPException(status_code=404, detail="Currency rates not found")
-    return {"base": base.upper(), "rates": rates}
+    return {"base": base.upper(), "rates": all_rates}
 
 @app.get("/convert", response_model=ConversionResponse)
 def convert_currency(amount: float, from_currency: str, to_currency: str):
